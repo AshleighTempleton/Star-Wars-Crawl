@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1933&q=80);
+    background-image: url(https://www.toquesandboots.com/wp-content/uploads/2015/10/New-Zealand-9-WEB.png);
     background-attachment: fixed;
     background-position: top;
     background-size: cover;
@@ -23,38 +23,53 @@ body {
     height: 100px;
     width: 600px;
     position: absolute;
-    left: 30%;
-    right: 50%;
-    top: 50%;
-    bottom: 40%;
+    left: 20%;
+    right: 80%;
+    top: 20%;
+    bottom: 60%;
 }
 
 
-p {
+.content1 {
     font-size: 30px;
     font-weight: bolder;
     display: flex;
-    text-align: justify;
-    width: 700px;
-    margin: 0 auto;
-    transform: rotateX(20deg);
-    animation: scroll ease-in 20s infinite;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    margin: 0 ;
+    transform: rotateX(30deg);
+    animation: scroll ease-in 20s;
 }
 
-p span { 
-    display: block;
+img {
+    width: 400px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 10px;
+}
+
+p { 
+    width: 100%;
+    text-align: center;
+    margin: 0;
+
   }
+  
 
 @keyframes scroll{
     0% { transform: rotateX(30deg) translateY(400px); }
-    85% { 
+    95% { 
         opacity: 1;
     }
     100% { transform: rotateX(30deg) translateY(-300px);
-    opacity: 0; }
+    opacity: 1; }
 
 }
 
