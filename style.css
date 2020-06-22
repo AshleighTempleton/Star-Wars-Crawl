@@ -1,0 +1,72 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1933&q=80);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(240, 184, 42);
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    perspective: 80px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+.mainTxt {
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    left: 30%;
+    right: 50%;
+    top: 50%;
+    bottom: 40%;
+}
+
+
+p {
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    text-align: justify;
+    width: 700px;
+    margin: 0 auto;
+    transform: rotateX(20deg);
+    animation: scroll ease-in 20s infinite;
+}
+
+p span { 
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+@keyframes scroll{
+    0% { transform: rotateX(30deg) translateY(400px); }
+    85% { 
+        opacity: 1;
+    }
+    100% { transform: rotateX(30deg) translateY(-300px);
+    opacity: 0; }
+
+}
+
+/*
+0% {
+    transform: rotateX(21deg) translate3d(0, 50rem, 0);
+    opacity: 1;
+}
+85% {
+    opacity: 1;
+}
+100% {
+    transform: rotateX(21deg) translate3d(0, -550rem, 0);
+    opacity: 0;
+}
